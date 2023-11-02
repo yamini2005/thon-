@@ -1,0 +1,11 @@
+def largest(A, n):
+    if n == 0:
+        return None  # Return None for an empty array (or you can choose any other default value)
+
+    max_element = A[0]  # Initialize max_element with the first element of the array
+
+    for i in range(1, n):
+        if A[i] > max_element:
+            max_element = A[i]
+
+    return max_element
